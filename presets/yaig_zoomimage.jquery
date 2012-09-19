@@ -1,0 +1,24 @@
+<!-- position: head -->
+<link rel="stylesheet" media="screen" type="text/css" href="{LIB_URL}/lib_jquery/plugins/zoomimage/css/zoomimage.css" />
+<script type="text/javascript" src="{LIB_URL}/lib_jquery/plugins/zoomimage/js/eye.js"></script>
+<script type="text/javascript" src="{LIB_URL}/lib_jquery/plugins/zoomimage/js/utils.js"></script>
+<script type="text/javascript" src="{LIB_URL}/lib_jquery/plugins/zoomimage/js/zoomimage.js"></script>
+<!-- position: head -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.yaig_thumb a').zoomimage({
+      Opacity: 0.3, //The opacity for the caption and controls. Default: 0.3
+      border: 0, //Image's border. Default: 0
+      duration: 300, //Animation duration. Default 300
+      easing: 'linear', //Animation easing. Default: linear
+      prevent: 14, //Pixes to move the mouse before the images is dragged (prevents accidental dragging). Default: 14
+      controls: true, //Whatever if the controls are displayed (if the image is not part of an library then the controls are not displayed). Default: true
+      caption: true, //Whatever if the caption is displayed (the caption text is the text from 'title' atribute. Default: true
+      centered: true, //Whatever if the image should be centered in the viewport or relative to the trigger. Default: false
+      hideSource: false, //Whatever to hide source when the image is opened. Default: false
+      className: false, //CSS class to apply to the image's box. Default: false
+      controlsTrigger: 'focus', //'focus' to show caption and controls when the box is focused or 'mouseover' to show controls and caption on mouse over. Default: 'focus'
+      preload: 'click', //'click' to preload the image when the trigger is clicked or 'load' to preload the image on document load. Default: 'click'
+		});
+	});
+</script>

@@ -1,0 +1,23 @@
+<!-- position: head -->
+<link rel="stylesheet" href="{LIB_URL}/lib_jquery/plugins/lightbox/css/jquery.lightbox-0.5.css" type="text/css" media="screen" charset="utf-8" />
+<script type="text/javascript" src="{LIB_URL}/lib_jquery/plugins/lightbox/js/jquery.lightbox-0.5.js"></script><!-- position: head -->
+<script type="text/javascript">
+  $(function() {
+    $('.yaig_thumb a').lightBox({
+      overlayBgColor: '#000', //Used to define the overlay background color. #000 (black) is default
+      overlayOpacity: '0.8', //Used to define the overlay opacity. 0.8 is default
+	    imageLoading: '{LIB_URL}/lib_jquery/plugins/lightbox/images/lightbox-ico-loading.gif', //The loading gif animator. images/lightbox-ico-loading.gif is default
+	    imageBtnClose: '{LIB_URL}/lib_jquery/plugins/lightbox/images/lightbox-btn-close.gif', //The close image button. images/lightbox-btn-close.gif is default
+     	imageBtnPrev: '{LIB_URL}/lib_jquery/plugins/lightbox/images/lightbox-btn-prev.gif', //The previous image button. images/lightbox-btn-prev.gif is default
+	    imageBtnNext: '{LIB_URL}/lib_jquery/plugins/lightbox/images/lightbox-btn-next.gif', //The next image button. images/lightbox-btn-next.gif is default
+	    containerBorderSize: 10, //The padding CSS information used in the container image box. 10 is default
+	    containerResizeSpeed: 400, //The duration of resize effect in the container image box. 400 is default
+	    txtImage: 'Image', //Text "Image" used in the image caption.
+	    txtOf: 'of', //Text "of" used in the image caption.
+	    imageBlank:	'{LIB_URL}/lib_jquery/plugins/lightbox/images/lightbox-blank.gif', //The image blank for trick Internet Explorer into showing hover. images/lightbox-blank.gif is default
+	    keyToClose: 'c', //The key to close the lightBox. Letter c (close) is default.
+      keyToPrev: 'p', //The key to show the previous image. Letter p (previous) is default.
+      keyToNext: 'n', //The key to show the next image. Letter n (next) is default.
+   });
+});
+</script>

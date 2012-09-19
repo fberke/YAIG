@@ -1,0 +1,18 @@
+<!-- position: head -->
+<!-- Jquery Lightbox-->
+<link href="{LIB_URL}/lib_jquery/plugins/piroBox/css_pirobox/demo5/style.css" class="piro_style" media="screen" title="white" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{LIB_URL}/lib_jquery/plugins/piroBox/js/pirobox.js"></script><!-- position: head -->
+<!-- position: head -->
+<script type="text/javascript">
+  if ( typeof jQuery != 'undefined' ) {
+    jQuery(document).ready(function() {
+      $().piroBox ({
+        my_speed: 400, //animation speed
+        bg_alpha: 0.1, //background opacity
+        slideShow : true, // true == slideshow on, false == slideshow off
+        slideSpeed : 4, //slideshow duration in seconds (3 to 6 Recommended)
+        close_all : '.piro_close,.piro_overlay'// add class .piro_overlay (with comma) if you want overlay click close piroBox
+      });
+    });
+  }
+</script>

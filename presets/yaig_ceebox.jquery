@@ -1,0 +1,16 @@
+<!-- position: head -->
+<link rel="stylesheet" href="{LIB_URL}/lib_jquery/plugins/ceeBox/css/ceebox-min.css" type="text/css" media="screen" charset="utf-8" />
+<script src="{LIB_URL}/lib_jquery/jquery-ui/external/jquery.metadata.js" type="text/javascript" charset="utf-8"></script>
+<script src="{LIB_URL}/lib_jquery/plugins/Easing/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<script src="{LIB_URL}/lib_jquery/plugins/ceeBox/js/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+<script src="{LIB_URL}/lib_jquery/plugins/ceeBox/js/jquery.swfobject.js" type="text/javascript" charset="utf-8"></script>
+<script src="{LIB_URL}/lib_jquery/plugins/ceeBox/js/jquery.ceebox-min.js" type="text/javascript" charset="utf-8"></script>
+<!-- position: head -->
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(
+    function() {
+      $(".yaig_thumb a").ceebox({        
+      });
+    }
+  );
+</script>

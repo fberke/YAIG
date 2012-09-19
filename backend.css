@@ -1,0 +1,24 @@
+div.gallery_box { position :relative; margin :0px auto; }
+div.gallery_box fieldset { margin :10px auto; }
+div.gallery_box legend { color :#336699; font-size :1.2em; font-weight :bold; padding :0px 3px 0px 4px; }
+div.gallery_box select { width :400px; margin-bottom :5px; }
+div.gallery_box input[type='text'] { width :150px; margin-bottom :5px; }
+div.gallery_box input[type='checkbox'] { margin-bottom :5px; }
+fieldset.gallery { clear :both; text-align :left; background-color :#f5f5f5; padding :6px; border :1px solid #0099ff; margin :0.7em; }
+.gallery_setting_name { width:30%; float :left; clear: left; margin-bottom: 5px; }
+.gallery_setting_value { width:70%; float :left; }
+
+/* 
+  The definitions below provide the style for the edit CSS button 
+  Required CSS class name: input.mod_moduledirectory_edit_css
+*/
+input.mod_imagegallery_edit_css {
+  color: #000;
+  background-color: #F0F0F0;
+  border: 1px solid gray;
+  padding: 2px;
+  margin: 0;
+  margin-left: 843px;
+  margin-top: -25px;
+  width: 110px;
+}		

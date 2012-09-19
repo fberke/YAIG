@@ -1,0 +1,154 @@
+@import url("html5modal.css");
+
+ul.yaig_picturelist {
+	margin: 1em 0 0;
+	padding: 0;
+	text-align: left;
+	overflow: hidden;
+}
+ul.yaig_picturelist li {
+	list-style: none;
+	float: left;
+	min-height: 110px;
+	font-weight: bold;
+	color: #777777;
+	/*overflow: hidden;*/
+}
+ul.yaig_picturelist li>span {
+	font-size: 9px;
+	color: #666;
+}
+ul.yaig_picturelist img {
+	display: block;
+	border: 2px solid #efefff;
+	margin: 0.5em 1em 1em 0.5em;
+	-moz-box-shadow: #777 5px 5px 5px;
+	-opera-box-shadow: #777 5px 5px 5px;
+	-webkit-box-shadow: #777 5px 5px 5px;
+	box-shadow: #777 5px 5px 5px;
+}
+ul.yaig_picturelist  img:hover {
+	border: 2px solid #4259A9;
+}
+ul.yaig_picturelist a:link, ul.yaig_picturelist a:visited, ul.yaig_picturelist a:hover {
+	color: #000000;
+	text-decoration: none;
+	border: none;
+}
+
+/****************************/
+/* Special classes for list */
+/****************************/
+
+/* thumbs have same width */
+ul.same_width {
+	/*...*/
+}
+/* thumbs hae same height */
+ul.same_height {
+	/*...*/
+}
+/* square-shaped thumbs */
+ul.squarethumb {
+	/*...*/
+}
+/* self-explaining... */
+ul.thumb4to3 {
+	/*...*/
+}
+ul.thumb16to9 {
+	/*...*/
+}
+ul.nolink {
+	padding: .5em; /* create space for transition, or make overflow auto */
+}
+ul.nolink img {
+	border: none;
+	-moz-box-shadow: none;
+	-opera-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	box-shadow: #777 0 0 1px;
+}
+ul.nolink img:hover {
+	border: none;
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	box-shadow: #777 0 0 4px;
+}
+
+li.yaig_thumb {
+	/*...*/
+	/*
+	mainly this class is for the JavaScript to hook to
+	*/
+}
+
+ul.yaig_pagenumbers {
+	margin: .5em 0;
+	padding: 0;
+	text-align: center;
+}
+ul.yaig_pagenumbers li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 .2em;
+	/*overflow: hidden;*/
+	color: #333;
+	font-size: 80%;
+	background-color: #dfdfdf;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+}
+ul.yaig_pagenumbers li:hover {
+	/*border-color: #777;*/
+	/*border-color: #324999;*/
+	border-color: #4259A9;
+	box-shadow: #777 0 0 2px;
+}
+ul.yaig_pagenumbers li:hover a {
+	color: #333;
+}
+ul.yaig_pagenumbers li span {
+	font-weight: bold;
+}
+ul.yaig_pagenumbers li a,
+ul.yaig_pagenumbers li span {
+	padding: .2em .3em;
+}
+ul.yaig_pagenumbers li a {
+	color: #777777;
+	text-decoration: none;
+	font-weight: normal;
+}
+ul.yaig_pagenumbers a:visited {
+	/*...*/
+}
+
+
+ul.yaig_directories {
+	background-color: #ddd;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	float:left;
+	margin: 0 1% 0 0;
+	padding: 3px;
+	width: 24%;
+	border-radius: 3px;
+}
+ul.yaig_directories li {
+	font-size: 80%;
+	list-style: none;
+}
+ul.yaig_directories li a {
+	display: block;
+	color: #777;
+	text-decoration: none;
+	padding: 0 2px;
+	border-radius: 2px;
+}
+ul.yaig_directories li a:hover {
+	background-color: #333;
+	color: #65ABFF;
+}
