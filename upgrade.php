@@ -1,17 +1,5 @@
 <?php
 
-/**
- *  @module         yaig
- *  @version        see info.php of this module
- *  @author         Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke
- *  @copyright      2004-2011, Ryan Djurovich, Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke 
- *  @license        GNU General Public License
- *  @license terms  see info.php of this module
- *  @platform       see info.php of this module
- *  @requirements   PHP 5.1.x and higher
- */
-
-
 // include class.secure.php to protect this file and the whole CMS!
 if (defined('WB_PATH')) {	
 	include(WB_PATH.'/framework/class.secure.php'); 
