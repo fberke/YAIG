@@ -1,17 +1,5 @@
 <?php
 
-/**
- *  @module         yaig
- *  @version        see info.php of this module
- *  @author         Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke
- *  @copyright      2004-2011, Ryan Djurovich, Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke 
- *  @license        GNU General Public License
- *  @license terms  see info.php of this module
- *  @platform       see info.php of this module
- *  @requirements   PHP 5.1.x and higher
- */
-
-
 // include class.secure.php to protect this file and the whole CMS!
 if (defined('WB_PATH')) {	
 	include(WB_PATH.'/framework/class.secure.php'); 
@@ -87,6 +75,28 @@ $gif = '\.gif$';
 $png = '\.png$';
 $txt = '\.txt$';
 $fontsize = 2;
+
+// This function looks whether YAIG is installed on WB or Lepton.
+// Both use different section ID prefixes ('wb_' and 'lep_'), so
+// YAIG needs to know which fragment identifier to use.
+function fragmentID () {
+global $database;
+	$sql = "SELECT * FROM ".TABLE_PREFIX."settings";
+	$db = $database->query ($sql);
+	
+	if(!$db) echo $database->get_error();
+ 	
+  	if ($db->numRows() > 0) {
+  		while ($ret = $db->fetchRow()) {
+  			//print_r ($ret);
+			if ($ret['name'] == 'lepton_version') return '#lep_';
+			if ($ret['name'] == 'wb_version') return '#wb_';
+		}
+	}
+}
+
+// make sure function is only called once to keep DB queries low
+if (!isset ($secIDprefix)) $secIDprefix = fragmentID ();
 
 if(!function_exists('html')) {
 	function html ($param) {
@@ -273,14 +283,14 @@ if (($num = sizeof($pics)) > 0) {
 			} else {
 				$predir = str_replace (WB_PATH.MEDIA_DIRECTORY.$picdir, '', $dirname);
 				$url = ($predir  == '') ? '?' : '?dir'.$section_id.'='.urlencode($predir).'&amp;';
-				echo '<li><a href="'.$url.'offset'.$section_id.'='.$i.'#wb_'.$section_id.'">'.$b.'</a></li>';
+				echo '<li><a href="'.$url.'offset'.$section_id.'='.$i.$secIDprefix.$section_id.'">'.$b.'</a></li>';
 			}
 			echo "\n" ;
 		}
 		//display showall to show all thumbs of this gallery and get a better slideshow experience
 		$predir = str_replace (WB_PATH.MEDIA_DIRECTORY.$picdir, '', $dirname);
 		$url = ($predir  == '') ? '?' : '?dir'.$section_id.'=' . urlencode($predir).'&amp;';
-		echo '<li><a href="'.$url.$showalltrigger.'#wb_'.$section_id.'">'.$showalltext.'</a></li>';
+		echo '<li><a href="'.$url.$showalltrigger.$secIDprefix.$section_id.'">'.$showalltext.'</a></li>';
 			
 		echo '</ul>'."\n";
 		echo '<!-- end pagenumbers -->'."\n";
