@@ -1,17 +1,5 @@
 <?php
 
-/**
- *  @module         yaig
- *  @version        see info.php of this module
- *  @author         Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke
- *  @copyright      2004-2011, Ryan Djurovich, Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke 
- *  @license        GNU General Public License
- *  @license terms  see info.php of this module
- *  @platform       see info.php of this module
- *  @requirements   PHP 5.1.x and higher
- */
-
-
 // include class.secure.php to protect this file and the whole CMS!
 if (defined('WB_PATH')) {	
 	include(WB_PATH.'/framework/class.secure.php'); 
@@ -33,17 +21,21 @@ if (defined('WB_PATH')) {
 $module_directory = 'yaig';
 $module_name      = 'Yet Another Image Gallery';
 $module_function  = 'page';
-$module_version   = '0.8.6';
+$module_version   = '0.8.7';
 $module_platform  = '1.x';
 $module_author    = 'Daniel Wacker, Matthias Gallas, Rob Smith, Manfred Fuenkner, Frank Berke';
 $module_license   = 'GNU General Public License';
 $module_license_terms  = '-';
 $module_guid      = '120f5dae-0d0d-455c-85f8-c910a45c73e2';
 $module_description = 'This module lets you create image galleries either using ColorBox for neat display (separate module plus jQuery required!) or on an HTML5 basis.';
-$module_home      = '';
+$module_home      = 'https://github.com/fberke/YAIG';
 
 /**
 Changelog:
+Version 0.8.7
+	+ added function to check whether YAIG is installed in Lepton or WB to
+	  ensure same functionality in both CMS
+	- removed header block from each file because it's of no use
 Version 0.8.6
 	+ checks if 'Library Admin' and 'jQuery Initial Library' are installed
 	  and copies *.jquery presets to /modules/lib_jquery/presets
