@@ -1,0 +1,27 @@
+Yet Another Image Gallery (YAIG)
+
+YAIG is an image gallery module for WebsiteBaker or Lepton CMS.
+
+With YAIG it's fairly easy to display image galleries on your site. Just upload
+your pictures using the media section of your CMS and the choose the folder containing
+the images from the YAIG backend.
+
+YAIG offers a variety of forms for creating the thumbnails, which makes it one of
+the most versatile galleries out there. And, of course, one of the most beautiful
+as it comes with some neat HTML5/CSS3 styles by default!
+
+YAIG offers integration for a variety of LibraryAdmin Colorbox-like plugins (aka Modals)
+- all you have to do is to select one of the plugins from a list and YAIG does all the
+rest for you.
+
+Some features in short:
+- LibraryAdmin integration
+- re-creation of thumbs when size has changed
+- optional HTML5 modal instead of JavaScript modals
+- pagination for big galleries with 'expand all' button
+- create link-less galleries (thumbs only)
+- optionally includes subfolders
+- multiple galleries on the same page are possible
+- valid and accessible HTML and CSS
+
+Have fun and thanks for using YAIG!
